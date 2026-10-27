@@ -56,7 +56,7 @@ public class SimpleDrive extends OpMode {
         double leftPower = drive + turn;
         double rightPower = drive - turn;
 
-        // Normalize powers if they exceed 1.0 to keep steering responsive
+        // Normalise powers if they exceed 1.0 to keep steering responsive
         double max = Math.max(Math.abs(leftPower), Math.abs(rightPower));
         if (max > 1.0) {
             leftPower /= max;
